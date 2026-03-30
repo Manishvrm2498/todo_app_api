@@ -40,6 +40,7 @@ public class TodoController {
         return ResponseEntity.ok(data);
     }
 
+
     @GetMapping("/my")
     public ResponseEntity<UserDTO> getMyTodos() {
         return ResponseEntity.ok(todoService.getUserTodos());

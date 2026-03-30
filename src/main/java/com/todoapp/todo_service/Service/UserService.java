@@ -86,6 +86,7 @@ public class UserService {
        return userRepository.save(user);
     }
 
+
         public void delete(Long id) {
         UserEntity currentUser = getCurrentUser();
             UserEntity user = userRepository.findById(currentUser.getId())

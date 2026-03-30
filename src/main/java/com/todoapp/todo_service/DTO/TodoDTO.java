@@ -19,7 +19,6 @@ public class TodoDTO {
 
     @NotBlank(message = "Description Required")
     private String description;
-
     private UserDTO user;
 
 }

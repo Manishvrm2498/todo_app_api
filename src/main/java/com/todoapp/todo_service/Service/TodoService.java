@@ -1,3 +1,4 @@
+
 package com.todoapp.todo_service.Service;
 
 
@@ -128,16 +129,17 @@ public class TodoService {
                 !existingTodo.getUserEntity().getId().equals(currentUser.getId())) {
             throw new UnauthorizedTodoAccessException("You are not allowed to update this todo");
         }
-           if(dto.getTitle() != null && !dto.getTitle().isBlank()){
-           existingTodo.setTitle(dto.getTitle());
-           }
-           if(dto.getDescription() != null && !dto.getDescription().isBlank()){
-               existingTodo.setDescription(dto.getDescription());
-           }
+        if(dto.getTitle() != null && !dto.getTitle().isBlank()){
+            existingTodo.setTitle(dto.getTitle());
+        }
+        if(dto.getDescription() != null && !dto.getDescription().isBlank()){
+            existingTodo.setDescription(dto.getDescription());
+        }
 
-         todoRepository.save(existingTodo);
-           return "Todo Updated Successfully";
+        todoRepository.save(existingTodo);
+        return "Todo Updated Successfully";
     }
+
 
     public String deleteTodoById(Long id)  {
 

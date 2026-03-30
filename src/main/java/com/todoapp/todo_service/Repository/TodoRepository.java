@@ -20,4 +20,5 @@ public interface TodoRepository extends JpaRepository<TodoEntity,Long> {
 
     List<TodoEntity> findByUserEntityId(Long userId);
 
+
 }
