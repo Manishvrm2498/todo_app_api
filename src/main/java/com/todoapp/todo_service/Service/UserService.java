@@ -59,6 +59,7 @@ public class UserService {
        return userRepository.save(user);
     }
 
+
     public String login(LoginRequest request) {
         try {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));

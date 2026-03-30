@@ -36,6 +36,7 @@ public class UserController {
         return ResponseEntity.ok(response);
     }
 
+
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request) {
         String token = userService.login(request);
