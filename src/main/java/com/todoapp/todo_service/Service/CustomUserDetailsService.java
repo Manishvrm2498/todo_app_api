@@ -3,7 +3,6 @@ package com.todoapp.todo_service.Service;
 import com.todoapp.todo_service.Entity.UserEntity;
 import com.todoapp.todo_service.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
