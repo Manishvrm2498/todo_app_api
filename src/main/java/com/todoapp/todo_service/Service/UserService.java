@@ -87,6 +87,7 @@ public class UserService {
     }
 
 
+
         public void delete(Long id) {
         UserEntity currentUser = getCurrentUser();
             UserEntity user = userRepository.findById(currentUser.getId())

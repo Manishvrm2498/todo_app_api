@@ -20,6 +20,7 @@ public class UserEntity {
     private String username;
     private String email;
     private String password;
+
     @OneToMany(mappedBy = "userEntity", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<TodoEntity> todos = new ArrayList<>();
 
