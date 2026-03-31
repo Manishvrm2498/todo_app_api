@@ -3,32 +3,32 @@ Todo App API
 A secure and scalable RESTful API for managing daily tasks, built using Spring Boot, JWT Authentication, and MySQL. This project demonstrates real-world backend development practices including authentication, authorization, and clean architecture.
 
 # Features
-• User Authentication using JWT
-• User Registration & Login
-•  Create, Read, Update, Delete (CRUD) Todos
-• User-based Authorization (users can access only their own todos)
-• Secure Password Storage (Encrypted)
-• RESTful API Design
+- User Authentication using JWT
+- User Registration & Login
+- Create, Read, Update, Delete (CRUD) Todos
+- User-based Authorization (users can access only their own todos)
+- Secure Password Storage (Encrypted)
+- RESTful API Design
 
 # Tech Stack
-• Backend: Spring Boot
-• Database: MySQL
-• Security: Spring Security + JWT
-• Build Tool: Maven
-• Language: Java
+- Backend: Spring Boot
+- Database: MySQL
+- Security: Spring Security + JWT
+- Build Tool: Maven
+- Language: Java
 
 
 # Project Structure
 
-• controller        # Handles API requests (REST Controllers)
-• service           # Business logic layer
-• entity            # Database entities (JPA Models)
-• repository        # Database interaction (JPA Repositories)
-• dto               # Data Transfer Objects (Request/Response)
-• security          # JWT & Spring Security configuration
-• exception         # Global exception handling
-• utility           # Helper classes / common utilities
-•TodoServiceApplication  # Main Spring Boot Application
+- controller(Handles API requests (REST Controllers)
+- service(Business logic layer)
+- entity(Database entities (JPA Models)
+- repository(Database interaction (JPA Repositories)
+- dto(Data Transfer Objects (Request/Response)
+- security(JWT & Spring Security configuration
+- exception(Global exception handling
+- utility(Helper classes / common utilities
+- TodoServiceApplication(Main Spring Boot Application
 
 # Configure Environment
 
