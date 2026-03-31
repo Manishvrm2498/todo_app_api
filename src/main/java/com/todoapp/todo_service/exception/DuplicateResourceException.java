@@ -1,4 +1,4 @@
-package com.todoapp.todo_service.CustomException;
+package com.todoapp.todo_service.customexception;
 
 public class DuplicateResourceException extends RuntimeException {
     public DuplicateResourceException(String message) {
