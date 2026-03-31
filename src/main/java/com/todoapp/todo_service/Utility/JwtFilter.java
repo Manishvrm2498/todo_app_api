@@ -40,7 +40,6 @@ public class JwtFilter extends OncePerRequestFilter {
                 username = jwtUtil.extractUsername(token);
             }
 
-
             if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
 
                 UserDetails userDetails = userDetailsService.loadUserByUsername(username);
@@ -61,7 +60,6 @@ public class JwtFilter extends OncePerRequestFilter {
                     SecurityContextHolder.getContext().setAuthentication(authToken);
                 }
             }
-
 
         } catch (Exception e) {
             System.out.println("JWT Error: " + e.getMessage());

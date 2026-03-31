@@ -13,16 +13,17 @@ import java.util.Date;
 @Component
 public class JwtUtil {
 
-    @Value("${jwt.secret")
-    private String SECRET;
+    private final Key key;
 
-    private final Key key = Keys.hmacShaKeyFor(SECRET.getBytes());
+    public JwtUtil(@Value("${jwt.secret}") String secret) {
+        this.key = Keys.hmacShaKeyFor(secret.getBytes());
+    }
 
     public String generateToken(String username) {
         return Jwts.builder()
                 .setSubject(username)
                 .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60))
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 ))
                 .signWith(key, SignatureAlgorithm.HS256)
                 .compact();
     }
