@@ -1,4 +1,4 @@
-Todo App API
+# Todo App API
 
 A secure and scalable RESTful API for managing daily tasks, built using Spring Boot, JWT Authentication, and MySQL. This project demonstrates real-world backend development practices including authentication, authorization, and clean architecture.
 
@@ -32,32 +32,30 @@ A secure and scalable RESTful API for managing daily tasks, built using Spring B
 
 # Configure Environment
 
-• Update with your credentials:
-• spring.datasource.url=jdbc:mysql://localhost:3306/your_db
-• spring.datasource.username=your_username
-• spring.datasource.password=your_password
-• jwt.secret=your_secret_key
+- Update with your credentials:
+- spring.datasource.url=jdbc:mysql://localhost:3306/your_db
+- spring.datasource.username=your_username
+- spring.datasource.password=your_password
+- jwt.secret=your_secret_key
 
 
 # API Endpoints
 
-• Authentication
-Method	           Endpoint             	Description
-POST	            /auth/register       	 Register user
-POST	            /auth/login	           Login user
+Authentication
+- POST /auth/register → Register user
+- POST /auth/login → Login user
 
-• Todos
-Method	           Endpoint             	Description
-GET	              /todos	               Get all todos
-POST            	/todos	               Create todo
-PUT	              /todos/{id}	           Update todo
-DELETE	         /todos/{id}	           Delete todo
+Todos
+- GET /todos → Get all todos
+- POST /todos → Create todo
+- PUT /todos/{id} → Update todo
+- DELETE /todos/{id} → Delete todo
 
 
 # Security
-• JWT-based authentication
-• Password encryption using BCrypt
-• Protected routes using Spring Security
+- JWT-based authentication
+- Password encryption using BCrypt
+- Protected routes using Spring Security
 
 
 
@@ -71,8 +69,8 @@ DELETE	         /todos/{id}	           Delete todo
 
 
 # Future Enhancements
-• Pagination and Sorting
-• Role-based access control
-• Docker support
-• Unit and Integration testing
-• API documentation using Swagger
+- Pagination and Sorting
+- Role-based access control
+- Docker support
+- Unit and Integration testing
+- API documentation using Swagger
