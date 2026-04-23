@@ -1,16 +1,13 @@
-package com.todoapp.todo_service.Controller;
+package com.todoapp.todo_service.controller;
 
 
-import com.todoapp.todo_service.DTO.LoginRequest;
-import com.todoapp.todo_service.DTO.RegisterRequest;
-import com.todoapp.todo_service.Entity.UserEntity;
-import com.todoapp.todo_service.Service.UserService;
+import com.todoapp.todo_service.dto.LoginRequest;
+import com.todoapp.todo_service.dto.RegisterRequest;
+import com.todoapp.todo_service.service.UserService;
 import jakarta.validation.Valid;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.Serializable;
 import java.util.LinkedHashMap;
 import java.util.Map;
 

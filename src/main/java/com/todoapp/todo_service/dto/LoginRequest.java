@@ -1,4 +1,4 @@
-package com.todoapp.todo_service.DTO;
+package com.todoapp.todo_service.dto;
 
 import lombok.Data;
 

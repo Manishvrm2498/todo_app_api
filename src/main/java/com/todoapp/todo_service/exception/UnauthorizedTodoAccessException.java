@@ -1,4 +1,4 @@
-package com.todoapp.todo_service.customexception;
+package com.todoapp.todo_service.exception;
 
 public class UnauthorizedTodoAccessException extends RuntimeException {
     public UnauthorizedTodoAccessException(String message) {

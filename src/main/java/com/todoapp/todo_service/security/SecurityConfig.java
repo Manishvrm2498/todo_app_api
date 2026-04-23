@@ -1,6 +1,6 @@
-package com.todoapp.todo_service.Security;
+package com.todoapp.todo_service.security;
 
-import com.todoapp.todo_service.Utility.JwtFilter;
+import com.todoapp.todo_service.utility.JwtFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.security.authentication.AuthenticationManager;

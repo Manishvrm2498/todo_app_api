@@ -1,6 +1,6 @@
-package com.todoapp.todo_service.Utility;
+package com.todoapp.todo_service.utility;
 
-import com.todoapp.todo_service.Service.CustomUserDetailsService;
+import com.todoapp.todo_service.service.CustomUserDetailsService;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import org.springframework.beans.factory.annotation.Autowired;

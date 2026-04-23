@@ -1,12 +1,11 @@
-package com.todoapp.todo_service.Controller;
+package com.todoapp.todo_service.controller;
 
 
-import com.todoapp.todo_service.DTO.TodoDTO;
-import com.todoapp.todo_service.DTO.UserDTO;
-import com.todoapp.todo_service.Entity.TodoEntity;
-import com.todoapp.todo_service.Service.TodoService;
+import com.todoapp.todo_service.dto.TodoDTO;
+import com.todoapp.todo_service.dto.UserDTO;
+import com.todoapp.todo_service.entity.TodoEntity;
+import com.todoapp.todo_service.service.TodoService;
 import jakarta.validation.Valid;
-import org.apache.tomcat.util.http.parser.TE;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -14,9 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.nio.file.AccessDeniedException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @RestController

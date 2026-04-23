@@ -1,8 +1,8 @@
-package com.todoapp.todo_service.Repository;
+package com.todoapp.todo_service.repository;
 
 
-import com.todoapp.todo_service.Entity.TodoEntity;
-import com.todoapp.todo_service.Entity.UserEntity;
+import com.todoapp.todo_service.entity.TodoEntity;
+import com.todoapp.todo_service.entity.UserEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,4 +1,4 @@
-package com.todoapp.todo_service.Security;
+package com.todoapp.todo_service.security;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,21 +1,20 @@
 
-package com.todoapp.todo_service.Service;
+package com.todoapp.todo_service.service;
 
 
-import com.todoapp.todo_service.CustomException.ResourceNotFoundException;
-import com.todoapp.todo_service.CustomException.UnauthorizedTodoAccessException;
-import com.todoapp.todo_service.DTO.TodoDTO;
-import com.todoapp.todo_service.DTO.UserDTO;
-import com.todoapp.todo_service.Entity.TodoEntity;
-import com.todoapp.todo_service.Entity.UserEntity;
-import com.todoapp.todo_service.Repository.TodoRepository;
-import com.todoapp.todo_service.Repository.UserRepository;
+import com.todoapp.todo_service.exception.ResourceNotFoundException;
+import com.todoapp.todo_service.exception.UnauthorizedTodoAccessException;
+import com.todoapp.todo_service.dto.TodoDTO;
+import com.todoapp.todo_service.dto.UserDTO;
+import com.todoapp.todo_service.entity.TodoEntity;
+import com.todoapp.todo_service.entity.UserEntity;
+import com.todoapp.todo_service.repository.TodoRepository;
+import com.todoapp.todo_service.repository.UserRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
-import java.nio.file.AccessDeniedException;
 import java.util.List;
 
 @Service

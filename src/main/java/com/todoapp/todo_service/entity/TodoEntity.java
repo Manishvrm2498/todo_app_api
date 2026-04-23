@@ -1,4 +1,4 @@
-package com.todoapp.todo_service.Entity;
+package com.todoapp.todo_service.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;

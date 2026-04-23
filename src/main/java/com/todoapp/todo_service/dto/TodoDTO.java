@@ -1,4 +1,4 @@
-package com.todoapp.todo_service.DTO;
+package com.todoapp.todo_service.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.validation.constraints.NotBlank;

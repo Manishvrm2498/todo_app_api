@@ -1,8 +1,5 @@
-package com.todoapp.todo_service.Exception;
+package com.todoapp.todo_service.exception;
 
-import com.todoapp.todo_service.CustomException.DuplicateResourceException;
-import com.todoapp.todo_service.CustomException.ResourceNotFoundException;
-import com.todoapp.todo_service.CustomException.UnauthorizedTodoAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

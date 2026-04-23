@@ -1,21 +1,18 @@
-package com.todoapp.todo_service.Service;
+package com.todoapp.todo_service.service;
 
-import com.todoapp.todo_service.CustomException.DuplicateResourceException;
-import com.todoapp.todo_service.CustomException.ResourceNotFoundException;
-import com.todoapp.todo_service.DTO.LoginRequest;
-import com.todoapp.todo_service.DTO.RegisterRequest;
-import com.todoapp.todo_service.Entity.UserEntity;
-import com.todoapp.todo_service.Repository.UserRepository;
-import com.todoapp.todo_service.Utility.JwtUtil;
+import com.todoapp.todo_service.exception.DuplicateResourceException;
+import com.todoapp.todo_service.exception.ResourceNotFoundException;
+import com.todoapp.todo_service.dto.LoginRequest;
+import com.todoapp.todo_service.dto.RegisterRequest;
+import com.todoapp.todo_service.entity.UserEntity;
+import com.todoapp.todo_service.repository.UserRepository;
+import com.todoapp.todo_service.utility.JwtUtil;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.Map;
 
 @Service
 public class UserService {

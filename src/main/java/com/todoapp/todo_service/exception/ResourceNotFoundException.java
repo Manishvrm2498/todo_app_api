@@ -1,4 +1,4 @@
-package com.todoapp.todo_service.customexception;
+package com.todoapp.todo_service.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String message) {
